@@ -31,7 +31,7 @@ def cau1(john, side_length):
     for j in range(5):
         # vẽ một hình vuông.
         for i in range(4):
-            john.forward(side_length*2*(j+1))
+            john.forward(side_length)
             john.left(90)
         john.penup()                            # dừng vẽ
         john.setpos((side_length*2*(j+1)),0)    # di truyển để tọa độ (x, y) tùy chon
@@ -148,16 +148,16 @@ wn = make_window('green', 'chapter 4')
 john = make_turtle('hotpink', 2)
 
 # ĐÁP ÁN:
-cau1 = cau1(john, 20)
-cau2 = cau2(john, 20)
-cau3 = draw_poly(john, 8, 50, 45)
-cau4 = cau4(john, 100)
-cau5 = cau5_a(john, 20, 0) # VẪN CHƯA LÀM ĐƯỢC
-cau5 = cau5_b(john, 100, 5)
-cau6 = draw_equitriangle(john, 50)
-cau7 = sum_to(10)
-cau8 = area_of_circle(6)
-cau9 = draw_a_star(john, 100)
-cau10 = draw_multiple_stars(john, 5, 100)
+cau1(john, 20)              # cau1 
+cau2(john, 20)              # cau2
+draw_poly(john, 8, 50, 45)  # cau3
+cau4(john, 100)             # cau4
+cau5_a(john, 20, 0)         # cau5 
+cau5_b(john, 100, 5)        # cau5 # VẪN CHƯA LÀM ĐƯỢC 
+draw_equitriangle(john, 50) # cau6
+sum_to(10)                  # cau7
+area_of_circle(6)           # cau8 
+draw_a_star(john, 100)      # cau9
+draw_multiple_stars(john, 5, 100) # cau10
 
 wn.mainloop()
