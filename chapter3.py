@@ -95,7 +95,7 @@ for number in numbers:
 canh_vuong_1 = float(input('nhập giá trị độ dài cạnh góc vuông #1: '))
 canh_vuong_2 = float(input('nhập giá trị độ dàicạnh góc vuông #2: '))
 canh_huyen = (canh_vuong_1**2 + canh_vuong_2**2)**(0.5) #áp dụng pytago
-print('câu 7: độ dại cạnh huyền của tam giác khi biết được độ dài hai cạnh góc vuông: ', canh_huyen)
+print('câu 7: độ dài cạnh huyền của tam giác khi biết được độ dài hai cạnh góc vuông: ', canh_huyen)
 
 #   8, 9: Viết một chương trình, với độ dài cho trc của một tam giác, hãy xác định đó có phải là một tam giác vuông hay không.
 # Lưu ý, cạnh thứ 3 phải là cạnh huyền, chương trình trả về True khi đo là cạnh huyền và vê False khi không phải.
